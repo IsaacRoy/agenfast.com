@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import FooterSection from "@/components/sections/FooterSection";
 import {
@@ -10,6 +11,15 @@ import {
   ChevronRight,
   Play,
 } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Google ADK & Next.js Course Curriculum",
+  description:
+    "Explore the full AgenFast Google ADK and Next.js course curriculum — 7+ sections and dozens of lessons covering agents, RAG, voice assistants, infrastructure, and marketing.",
+  alternates: {
+    canonical: "/docs",
+  },
+};
 
 const sections = [
   {
