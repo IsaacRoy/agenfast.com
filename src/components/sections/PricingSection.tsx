@@ -17,8 +17,6 @@ const agenfastFeatures = [
   "Vercel & GCP Agent Engine deploy",
   "Guide to land high-paying clients",
   "MCP & Agent-to-Agent course (free)",
-  "1-1 Consultation Call",
-  "Discord Community",
   "Lifetime Updates",
 ];
 
