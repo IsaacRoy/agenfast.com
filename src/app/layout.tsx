@@ -85,6 +85,12 @@ export default function RootLayout({
             gtag('config', 'AW-17985037522');
           `}
         </Script>
+        <Script
+          src="https://datafa.st/js/script.js"
+          data-website-id="dfid_gnPXpWJphfIC68SUNUvg6"
+          data-domain="agenfast.com"
+          strategy="afterInteractive"
+        />
         {children}
       </body>
     </html>
