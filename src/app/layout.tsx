@@ -56,7 +56,13 @@ export const metadata: Metadata = {
     images: ["/agenfast-logo.png"],
   },
   icons: {
-    icon: "/agenfast-logo.png",
+    icon: [
+      { url: "/agenfast-logo.png", type: "image/png" },
+      { url: "/agenfast-logo.png", sizes: "32x32", type: "image/png" },
+      { url: "/agenfast-logo.png", sizes: "192x192", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/agenfast-logo.png",
   },
   alternates: {
     canonical: "/",
