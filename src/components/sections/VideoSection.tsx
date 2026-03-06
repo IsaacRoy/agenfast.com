@@ -161,6 +161,47 @@ export default function VideoSection() {
             </>
           </div>
 
+          {/* ── Project 1 demo (capstone) ── */}
+          <div
+            className={`w-full pt-4 transition-all duration-700 ${
+              visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+            }`}
+            style={{ transitionDelay: "1220ms" }}
+          >
+            <div className="mb-6 text-left md:text-center">
+              <p className="text-xs font-mono text-zinc-600 uppercase tracking-[0.2em] mb-3">
+                Project 1 of 2
+              </p>
+              <h2 className="text-3xl md:text-4xl font-semibold text-white">
+                AI voice assistant — full walkthrough
+              </h2>
+              <p className="mt-3 text-sm md:text-base text-zinc-400 max-w-2xl md:mx-auto">
+                This is the first of two end-of-course projects you&apos;ll build after completing the full course — designed to
+                bring everything together in a real, shippable product.
+              </p>
+            </div>
+
+            <div className="relative w-full overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-950 shadow-2xl shadow-black/60">
+              <div className="relative w-full pt-[56.25%]">
+                <video
+                  className="absolute inset-0 w-full h-full object-cover"
+                  src="/1web.mp4"
+                  controls
+                  playsInline
+                  preload="metadata"
+                >
+                  <track
+                    default
+                    kind="captions"
+                    src="/1web.en.vtt"
+                    srcLang="en"
+                    label="English"
+                  />
+                </video>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
