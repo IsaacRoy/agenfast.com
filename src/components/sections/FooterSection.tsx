@@ -46,6 +46,16 @@ export default function FooterSection() {
         </nav>
       </div>
       <div className="max-w-5xl mx-auto mt-6 pt-6 border-t border-zinc-900 text-center">
+        <p className="text-zinc-500 text-sm mb-2">
+          Contact{" "}
+          <a
+            href="mailto:asrionqbu@gmail.com"
+            className="text-zinc-300 hover:text-yellow-400 transition-colors"
+          >
+            asrionqbu@gmail.com
+          </a>{" "}
+          for any queries or feedback.
+        </p>
         <p className="text-zinc-600 text-sm">
           © {new Date().getFullYear()} AgenFast. AI-optimized NextJS + Google ADK boilerplate.
         </p>
