@@ -53,7 +53,7 @@ export default function PricingSection() {
           <p className="text-zinc-400 text-base">
             Get more than any course out there.{" "}
             <span className="text-yellow-400 font-semibold">
-              Production code + course for $99
+              Production code + course for $49
             </span>
           </p>
         </div>
@@ -83,11 +83,11 @@ export default function PricingSection() {
 
             {/* Price */}
             <div className="flex items-end gap-2 mb-1">
-              <span className="text-5xl font-bold text-white">$99</span>
+              <span className="text-5xl font-bold text-white">$49</span>
               <div className="flex flex-col pb-1">
                 <span className="text-zinc-500 line-through text-sm">$349</span>
                 <span className="text-green-400 text-xs font-semibold">
-                  $250 off
+                  $300 off
                 </span>
               </div>
             </div>
@@ -173,7 +173,7 @@ export default function PricingSection() {
                 <span className="text-red-400 font-semibold">$200+</span>{" "}
                 just to watch videos, when AgenFast gives you{" "}
                 <span className="text-yellow-400 font-semibold">
-                  production code + a full course for $99
+                  production code + a full course for $49
                 </span>
                 ?
               </p>
