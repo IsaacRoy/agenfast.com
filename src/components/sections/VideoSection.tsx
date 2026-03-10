@@ -173,11 +173,12 @@ export default function VideoSection() {
                 Project 1 of 2
               </p>
               <h2 className="text-3xl md:text-4xl font-semibold text-white">
-                AI voice assistant — full walkthrough
+                AI voice assistant — production-ready build
               </h2>
               <p className="mt-3 text-sm md:text-base text-zinc-400 max-w-2xl md:mx-auto">
-                This is the first of two end-of-course projects you&apos;ll build after completing the full course — designed to
-                bring everything together in a real, shippable product.
+                In this first capstone project you&apos;ll design, build, and ship a production-ready AI voice assistant using Google
+                ADK and Next.js — wiring together speech, tools, and UI into a single experience you can confidently demo to
+                clients or employers.
               </p>
             </div>
 
@@ -198,6 +199,40 @@ export default function VideoSection() {
                     label="English"
                   />
                 </video>
+              </div>
+            </div>
+          </div>
+
+          {/* ── Project 2 demo (RAG agent) ── */}
+          <div
+            className={`w-full pt-10 transition-all duration-700 ${
+              visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+            }`}
+            style={{ transitionDelay: "1300ms" }}
+          >
+            <div className="mb-6 text-left md:text-center">
+              <p className="text-xs font-mono text-zinc-600 uppercase tracking-[0.2em] mb-3">
+                Project 2 of 2
+              </p>
+              <h2 className="text-3xl md:text-4xl font-semibold text-white">
+                RAG agent — end-to-end knowledge assistant
+              </h2>
+              <p className="mt-3 text-sm md:text-base text-zinc-400 max-w-2xl md:mx-auto">
+                This second capstone focuses on retrieval-augmented generation (RAG): you&apos;ll build a knowledge assistant that
+                indexes your own documents, answers questions with citations, and demonstrates how to take a data-aware agent
+                from prototype to a polished, production-ready experience.
+              </p>
+            </div>
+
+            <div className="relative w-full overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-950 shadow-2xl shadow-black/60">
+              <div className="relative w-full pt-[56.25%]">
+                <video
+                  className="absolute inset-0 w-full h-full object-cover"
+                  src="/ragviedo.mov"
+                  controls
+                  playsInline
+                  preload="metadata"
+                />
               </div>
             </div>
           </div>

@@ -11,12 +11,12 @@ export default function HeroSection() {
       {/* Subtle radial gradient background */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_20%_50%,rgba(234,179,8,0.04),transparent)]" />
 
-      <div className="relative mx-auto w-full max-w-7xl px-6 pt-28 pb-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 pt-24 sm:pt-28 pb-14 sm:pb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-8 items-center">
           {/* Left content */}
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-6 max-w-xl mx-auto lg:mx-0">
             {/* Announcement badge */}
-            <div className="inline-flex w-fit items-center gap-2 rounded-lg border border-zinc-700 bg-zinc-900 px-4 py-2 text-sm text-zinc-300">
+            <div className="inline-flex w-fit items-center gap-2 rounded-lg border border-zinc-700 bg-zinc-900 px-3.5 py-1.5 text-xs sm:text-sm text-zinc-300 self-center md:self-start">
               <span className="font-semibold text-white">New:</span>
               <span>MCP &amp; Agent-to-Agent Course</span>
               <span className="text-yellow-400 font-medium">— Coming Soon</span>
@@ -35,20 +35,20 @@ export default function HeroSection() {
             </div>
 
             {/* Main headline */}
-            <div className="flex flex-col gap-1">
-              <h1 className="text-6xl font-bold text-white leading-tight">
+            <div className="flex flex-col gap-1 text-center md:text-left">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
                 Ship your
               </h1>
-              <h1 className="text-6xl font-bold text-yellow-400 leading-tight min-h-[1.2em]">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-yellow-400 leading-tight min-h-[1.2em]">
                 <TypewriterText />
               </h1>
-              <h2 className="text-4xl font-bold text-white uppercase tracking-widest font-mono mt-2">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white uppercase tracking-widest font-mono mt-3 sm:mt-2">
                 IN MINUTES, NOT MONTHS.
               </h2>
             </div>
 
             {/* Description */}
-            <p className="text-base text-zinc-300 leading-relaxed max-w-xl">
+            <p className="text-sm sm:text-base text-zinc-300 leading-relaxed max-w-xl text-center md:text-left mx-auto md:mx-0">
               <span className="text-purple-400 font-semibold">World&apos;s First</span>{" "}
               AI-optimized NextJS &amp; Google ADK{" "}
               <span className="text-white font-medium">boilerplates</span> — with a{" "}
@@ -57,19 +57,21 @@ export default function HeroSection() {
             </p>
 
             {/* Product of the week card */}
-            <TrophyBadge />
+            <div className="self-center md:self-start">
+              <TrophyBadge />
+            </div>
 
             {/* CTA Buttons */}
-            <div className="flex items-center gap-3">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
               <a href="https://agenfast.gumroad.com/l/agenfast" target="_blank" rel="noopener noreferrer">
-                <Button className="relative overflow-hidden bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-6 py-2.5 rounded-lg text-sm">
+                <Button className="relative w-full sm:w-auto overflow-hidden bg-yellow-400 hover:bg-yellow-300 text-black font-semibold px-6 py-2.5 rounded-lg text-sm">
                   <span className="shimmer-overlay" />
                   Get AgenFast
                 </Button>
               </a>
               <Button
                 variant="outline"
-                className="border-zinc-600 bg-transparent text-white hover:bg-zinc-800 hover:text-white px-6 py-2.5 rounded-lg text-sm"
+                className="w-full sm:w-auto border-zinc-600 bg-transparent text-white hover:bg-zinc-800 hover:text-white px-6 py-2.5 rounded-lg text-sm"
               >
                 Features
               </Button>

@@ -2,12 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 const links = [
-  { label: "Docs", href: "/docs" },
-  { label: "Pricing", href: "/pricing" },
-  { label: "Contact", href: "mailto:hello@agenfast.com" },
-  { label: "Privacy Policy", href: "#" },
-  { label: "Terms of Service", href: "#" },
-  { label: "Refund Policy", href: "#" },
+  { label: "Docs", href: "/docs", tag: "datafast_footer_docs" },
+  { label: "Pricing", href: "/pricing", tag: "datafast_footer_pricing" },
+  { label: "Contact", href: "mailto:hello@agenfast.com", tag: "datafast_footer_contact" },
+  { label: "Privacy Policy", href: "/privacy", tag: "datafast_footer_privacy" },
+  { label: "Terms of Service", href: "/terms", tag: "datafast_footer_terms" },
+  { label: "Refund Policy", href: "/refund", tag: "datafast_footer_refund" },
 ];
 
 export default function FooterSection() {
@@ -34,10 +34,11 @@ export default function FooterSection() {
           <span className="text-white font-bold text-base">AgenFast</span>
         </div>
         <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-1">
-          {links.map(({ label, href }) => (
+          {links.map(({ label, href, tag }) => (
             <Link
               key={label}
               href={href}
+              data-datafast-tag={tag}
               className="text-zinc-500 text-sm hover:text-zinc-300 transition-colors"
             >
               {label}
