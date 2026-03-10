@@ -228,7 +228,7 @@ export default function VideoSection() {
               <div className="relative w-full pt-[56.25%]">
                 <video
                   className="absolute inset-0 w-full h-full object-cover"
-                  src="/ragviedo.mov"
+                  src="/ragviedo%20(1).mov"
                   controls
                   playsInline
                   preload="metadata"
